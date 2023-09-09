@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uninversity Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" />
+        </a>
+
+        <div class="nav-links">
+          <i class="fa fa-times"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <i class="fa fa-bars"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          libero perspiciatis exercitationem.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- Course -->
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
+        exercitationem.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+            soluta iure eum enim fugit. Dolorem, mollitia ipsum. At doloremque
+            ex mollitia repellendus error ad eos eveniet necessitatibus?
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+            soluta iure eum enim fugit. Dolorem, mollitia ipsum. At doloremque
+            ex mollitia repellendus error ad eos eveniet necessitatibus?
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+            soluta iure eum enim fugit. Dolorem, mollitia ipsum. At doloremque
+            ex mollitia repellendus error ad eos eveniet necessitatibus?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- campus -->
+
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugiat!
+      </p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+
+        <div class="campus-col">
+          <img src="images/newyork.png" />
+          <div class="layer">
+            <h3>NEWYORK</h3>
+          </div>
+        </div>
+
+        <div class="campus-col">
+          <img src="images/washington.png" />
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+
+    <script>
+      let navLinksElement = document.querySelector(".nav-links");
+
+      function hideMenu() {
+        navLinksElement.style.right = "-200px";
+      }
+
+      function showMenu() {
+        navLinksElement.style.right = "0";
+      }
+
+      document.querySelector(".fa-times").addEventListener("click", () => {
+        hideMenu();
+      });
+
+      document.querySelector(".fa-bars").addEventListener("click", () => {
+        showMenu();
+      });
+    </script>
+  </body>
+</html>
